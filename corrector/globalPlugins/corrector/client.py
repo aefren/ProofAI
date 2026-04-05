@@ -21,7 +21,6 @@ class OpenAICompatibleClient:
 	def proofread_text(self, text):
 		payload = {
 			"model": self.model,
-			"temperature": 0,
 			"messages": [
 				{"role": "system", "content": self.system_prompt},
 				{"role": "user", "content": text},
