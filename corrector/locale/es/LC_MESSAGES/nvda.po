@@ -1,0 +1,82 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ProofAI 0.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 00:00+0000\n"
+"PO-Revision-Date: 2026-04-06 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "You are an orthography and grammar proofreader. Correct the user's text while preserving its original language, tone, line breaks, and formatting. Return only the corrected text, with no comments or explanations."
+msgstr "Eres un revisor ortográfico y gramatical. Corrige el texto del usuario conservando su idioma original, el tono, los saltos de línea y el formato. Devuelve solo el texto corregido, sin comentarios ni explicaciones."
+
+msgid "Connection error: %s"
+msgstr "Error de conexión: %s"
+
+msgid "The request to the API timed out"
+msgstr "Se agotó el tiempo de espera al conectar con la API"
+
+msgid "The API did not return any proofread text"
+msgstr "La API no devolvió ningún texto revisado"
+
+msgid "ProofAI"
+msgstr "ProofAI"
+
+msgid "API &key:"
+msgstr "Clave de &API:"
+
+msgid "&Endpoint URL:"
+msgstr "&URL del endpoint:"
+
+msgid "&Model:"
+msgstr "&Modelo:"
+
+msgid "&Timeout (seconds):"
+msgstr "&Tiempo de espera (segundos):"
+
+msgid "&Proofreading prompt:"
+msgstr "&Prompt de revisión:"
+
+msgid "&Announce when proofreading finishes"
+msgstr "&Anunciar cuando termine la revisión"
+
+msgid "Set the API key in ProofAI settings first"
+msgstr "Configura primero la clave de API en los ajustes de ProofAI"
+
+msgid "Set the endpoint URL in ProofAI settings first"
+msgstr "Configura primero la URL del endpoint en los ajustes de ProofAI"
+
+msgid "Set the model in ProofAI settings first"
+msgstr "Configura primero el modelo en los ajustes de ProofAI"
+
+msgid "A proofreading request is already in progress"
+msgstr "Ya hay una revisión en curso"
+
+msgid "Could not retrieve the selected text"
+msgstr "No se pudo obtener el texto seleccionado"
+
+msgid "You must select text in an edit field"
+msgstr "Debes seleccionar texto en un cuadro de edición"
+
+msgid "Proofreading selected text"
+msgstr "Revisando el texto seleccionado"
+
+msgid "Proofreading finished, but the focus changed so the selection could not be replaced"
+msgstr "La revisión terminó, pero el foco cambió y no se pudo reemplazar la selección"
+
+msgid "Proofreading finished, but the proofread text could not be inserted"
+msgstr "La revisión terminó, pero no se pudo insertar el texto revisado"
+
+msgid "Text proofread and inserted"
+msgstr "Texto revisado e insertado"
+
+msgid "Proofreading failed: %s"
+msgstr "La revisión falló: %s"
+
+msgid "Proofreads the selected text in the active edit field"
+msgstr "Revisa el texto seleccionado en el cuadro de edición activo"
