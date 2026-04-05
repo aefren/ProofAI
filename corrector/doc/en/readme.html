@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProofAI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .keyboard-shortcut {
+            font-weight: bold;
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <h1>ProofAI</h1>
+    <p><strong>Version:</strong> 0.2.0</p>
+    <p><strong>Author:</strong> Alfred</p>
+
+    <h2>Description</h2>
+    <p>
+        ProofAI is an NVDA add-on that proofreads the text selected in an edit field
+        using any OpenAI-compatible API and replaces the selection with the improved result.
+    </p>
+
+    <h2>Requirements</h2>
+    <ul>
+        <li>NVDA 2025.3.2 or later.</li>
+        <li>An API key for an OpenAI-compatible service (OpenAI, OpenRouter, a local server, etc.).</li>
+    </ul>
+
+    <h2>Installation</h2>
+    <ol>
+        <li>Download the <code>ProofAI-0.2.0.nvda-addon</code> file.</li>
+        <li>Open the file (it will open with NVDA).</li>
+        <li>Follow the on-screen instructions to install the add-on.</li>
+        <li>Restart NVDA when prompted.</li>
+    </ol>
+
+    <h2>Configuration</h2>
+    <ol>
+        <li>Go to <strong>NVDA menu &gt; Preferences &gt; Settings &gt; ProofAI</strong>.</li>
+        <li>Enter your <strong>API key</strong>.</li>
+        <li>Set the <strong>endpoint URL</strong> (default: <code>https://api.openai.com/v1/chat/completions</code>).</li>
+        <li>Set the <strong>model</strong> (default: <code>gpt-4.1-mini</code>).</li>
+        <li>Optionally customize the <strong>system prompt</strong> used to instruct the model.</li>
+        <li>Click <strong>OK</strong> to save.</li>
+    </ol>
+
+    <h2>Usage</h2>
+    <ol>
+        <li>Move focus to an edit field.</li>
+        <li>Select the text you want to proofread.</li>
+        <li>Press <span class="keyboard-shortcut">NVDA+Shift+X</span>.</li>
+        <li>The add-on will send the selected text to the configured API and replace it with the corrected version.</li>
+    </ol>
+
+    <h2>Keyboard Shortcuts</h2>
+    <table border="1" cellspacing="0" cellpadding="6">
+        <thead>
+            <tr>
+                <th>Shortcut</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="keyboard-shortcut">NVDA+Shift+X</span></td>
+                <td>Proofread and replace the selected text.</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>The gesture can be changed in NVDA under <strong>Preferences &gt; Input Gestures</strong>.</p>
+
+    <h2>Notes</h2>
+    <ul>
+        <li>Only the selected text is sent to the API — nothing else.</li>
+        <li>Compatible with any OpenAI-compatible service: OpenAI, OpenRouter, LM Studio, Ollama, etc.</li>
+        <li>The system prompt can be customized in the settings panel to change the correction style.</li>
+    </ul>
+
+    <h2>License</h2>
+    <p>
+        This add-on is distributed under the
+        <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU General Public License, version 2</a>.
+    </p>
+</body>
+</html>

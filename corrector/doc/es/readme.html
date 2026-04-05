@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProofAI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .keyboard-shortcut {
+            font-weight: bold;
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <h1>ProofAI</h1>
+    <p><strong>Versión:</strong> 0.2.0</p>
+    <p><strong>Autor:</strong> Alfred</p>
+
+    <h2>Descripción</h2>
+    <p>
+        ProofAI es un complemento para NVDA que revisa el texto seleccionado en un cuadro de edición
+        usando cualquier API compatible con OpenAI y reemplaza la selección con el resultado mejorado.
+    </p>
+
+    <h2>Requisitos</h2>
+    <ul>
+        <li>NVDA 2025.3.2 o posterior.</li>
+        <li>Una clave de API para un servicio compatible con OpenAI (OpenAI, OpenRouter, un servidor local, etc.).</li>
+    </ul>
+
+    <h2>Instalación</h2>
+    <ol>
+        <li>Descarga el archivo <code>ProofAI-0.2.0.nvda-addon</code>.</li>
+        <li>Abre el archivo (se abrirá con NVDA).</li>
+        <li>Sigue las instrucciones en pantalla para instalar el complemento.</li>
+        <li>Reinicia NVDA cuando se te indique.</li>
+    </ol>
+
+    <h2>Configuración</h2>
+    <ol>
+        <li>Ve a <strong>Menú NVDA &gt; Preferencias &gt; Configuración &gt; ProofAI</strong>.</li>
+        <li>Introduce tu <strong>clave de API</strong>.</li>
+        <li>Establece la <strong>URL del endpoint</strong> (por defecto: <code>https://api.openai.com/v1/chat/completions</code>).</li>
+        <li>Establece el <strong>modelo</strong> (por defecto: <code>gpt-4.1-mini</code>).</li>
+        <li>Opcionalmente, personaliza el <strong>prompt del sistema</strong> que se usa para instruir al modelo.</li>
+        <li>Haz clic en <strong>Aceptar</strong> para guardar.</li>
+    </ol>
+
+    <h2>Uso</h2>
+    <ol>
+        <li>Sitúa el foco en un cuadro de edición.</li>
+        <li>Selecciona el texto que quieras revisar.</li>
+        <li>Pulsa <span class="keyboard-shortcut">NVDA+Shift+X</span>.</li>
+        <li>El complemento enviará el texto seleccionado a la API configurada y lo reemplazará por la versión corregida.</li>
+    </ol>
+
+    <h2>Atajos de teclado</h2>
+    <table border="1" cellspacing="0" cellpadding="6">
+        <thead>
+            <tr>
+                <th>Atajo</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="keyboard-shortcut">NVDA+Shift+X</span></td>
+                <td>Revisar y reemplazar el texto seleccionado.</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>El gesto puede cambiarse desde NVDA en <strong>Preferencias &gt; Gestos de entrada</strong>.</p>
+
+    <h2>Notas</h2>
+    <ul>
+        <li>Solo se envía a la API el texto seleccionado, nada más.</li>
+        <li>Compatible con cualquier servicio compatible con OpenAI: OpenAI, OpenRouter, LM Studio, Ollama, etc.</li>
+        <li>El prompt del sistema puede personalizarse en el panel de configuración para cambiar el estilo de corrección.</li>
+    </ul>
+
+    <h2>Licencia</h2>
+    <p>
+        Este complemento se distribuye bajo la
+        <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">Licencia Pública General GNU, versión 2</a>.
+    </p>
+</body>
+</html>
